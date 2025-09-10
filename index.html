@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mess Management</title>
+
+    <!-- tailwind + daisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- line css file  -->
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <!-- font awsome link  -->
+    <script src="https://kit.fontawesome.com/6532b6f6c8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navbar section begains hare  -->
+    <section>
+      <div class="navbar bg-base-100 shadow-sm bg-gray-200">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Feature</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="rounded-full ml-3 w-10">
+            <img class="w-full h-full object-cover" src="./assets/logo-iQU0Xw6O.png" alt="" />
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-bold text-xl">Home</a></li>
+            <li><a class="font-bold text-xl">About</a></li>
+            <li><a class="font-bold text-xl">Feature</a></li>
+            <li><a class="font-bold text-xl">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end mr-4">
+          <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none">Login Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- banner section starts hare  -->
+    <section class="flex items-center mx-8 gap-6 mx-auto px-10">
+      <div class="flex-1">
+        <h2 class="text-4xl font-bold mb-4">Mess Management System – মেস লাইফকে করুন সহজ</h2>
+        <p class="text-2xl font-semibold bangla-font text-gray-500">
+          অটোমেটিকভাবে মিল, খরচ ও ব্যালান্স ট্র্যাকিং আপনার হাতের মুঠোয়।
+        </p>
+        <div class="mt-5">
+          <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none">
+            <i class="fa-brands fa-google-play"></i> Download App
+          </button>
+          <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none"><i class="fa-brands fa-youtube"></i> Watch Tutorial</button>
+        </div>
+      </div>
+      <div class="w-96 flex-1">
+        <img class="w-full h-full" src="./assets/hero-img-J3ER5ClJ.png" alt="" />
+      </div>
+    </section>
+    <!-- about section starts hare  -->
+    <section class="flex gap-6 items-center px-10 mx-auto">
+      <div class="flex-1 w-full">
+        <img class="w-full h-full" src="./assets/about-img-QF0MChu1.png" alt="" />
+      </div>
+      <div class="flex-1 space-y-5">
+        <h3 class="text-6xl font-bold">Mess Manager</h3>
+        <p class="text-lg font-medium text-gray-600">
+          খাতা-কলম আর ক্যালকুলেটরের ঝামেলা থেকে মুক্তি দিতে আমরা এনেছি Mess Manager App। এখানে শুধু বাজার খরচ, মিল এবং
+          মেম্বারদের জমা টাকা লিখে রাখলেই, অ্যাপ নিজে থেকেই সব হিসাব করে আপনাকে দেখাবে অটোমেটিকভাবে।
+        </p>
+        <p class="text-lg font-medium text-gray-600">
+          সবচেয়ে বড় সুবিধা হলো—এখানে নেই ডাটা হারানোর কোনো ভয়। যেকোনো সময়, যেকোনো মোবাইল থেকে লগইন করে আপনি সহজেই
+          ম্যানেজ করতে পারবেন আপনার মেস এবং দেখে নিতে পারবেন মেসের বর্তমান সব হিসাব এক নজরে।
+        </p>
+        <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none"><i class="fa-brands fa-facebook"></i> Facebook Page</button>
+      </div>
+    </section>
+    <!-- why choose us section  -->
+    <section class="flex gap-5 px-10 items-center">
+      <div class="flex-1 space-y-3">
+        <h2 class="text-5xl mb-3">why choose Us?</h2>
+        <div class="flex flex-wrap gap-3">
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse"
+          >
+            Mess Chat
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            সম্পূর্ণ অনলাইন ব্যবস্থা
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            অটোমেটিক বাজার করার তারিখ সেট করা
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            ইনস্ট্যান্ট নোটিফিকেশন
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            হিসাবের ইতিহাস
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            ম্যানেজার পরিবর্তন সুবিধা
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            পিডিএফ ডাউনলোড
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            টু-লেট সুবিধা
+          </button>
+          <button
+            class="px-4 py-2 bg-green-100 text-green-800 font-semibold rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out"
+          >
+            24/7 সাপোর্ট টিম
+          </button>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src="./assets/feature-img-CUoMiCzg.png" alt="" />
+      </div>
+    </section>
+    <section class="bg-gray-100 text-gray-800 py-10">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Left Section -->
+        <div class="flex items-start space-x-4">
+          <img src="your-logo.png" alt="Mess Manager Logo" class="w-12 h-12 rounded-full" />
+          <div>
+            <h2 class="text-2xl font-bold">Mess Manager</h2>
+            <p class="text-sm mt-2">মেসের মিলসহ সব খরচ অটোমেটিকলি দেখুন আপনার মোবাইলে।</p>
+          </div>
+        </div>
+
+        <!-- Contact Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Contact Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-600 underline">Facebook Page</a></li>
+            <li><a href="#" class="hover:text-green-600 underline">Facebook Group</a></li>
+            <li><a href="#" class="hover:text-green-600 underline">Youtube</a></li>
+            <li><a href="#" class="hover:text-green-600 underline">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-600 underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-green-600 underline">Terms &amp; Condition</a></li>
+            <li><a href="#" class="hover:text-green-600 underline">Share Your Feedback</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-100 text-center">
+        <h3>@ Copyright 2025 <span class="font-bold">7C Members</span> all rights reserved</h3>
+    </footer>
+  </body>
+</html>
