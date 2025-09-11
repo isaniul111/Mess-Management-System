@@ -59,10 +59,52 @@
           </ul>
         </div>
         <div class="navbar-end mr-4">
-          <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none">Login Now</button>
+          <button
+            onclick="login_modal.showModal()"
+            class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out hover:text-slate-950 border-none"
+          >
+            Login Now
+          </button>
         </div>
       </div>
     </section>
+
+    <!-- modal for login buttion  -->
+    <div>
+      <dialog id="login_modal" class="modal ">
+        <div class="modal-box ">
+          <form method="dialog">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
+          <div class="flex justify-center p-10 ">
+            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+              <label class="label">Email</label>
+              <input type="email" class="input" placeholder="Email" required/>
+
+              <label class="label">Password</label>
+              <input type="password" class="input" placeholder="Password" required />
+              <a href="" class="text-blue-700 mb-0">Forget password ?</a>
+              <button class="btn btn-neutral mt-4">Login</button>
+              <p>Don't have an Account ? <span id="signup-clicked" class="text-lg text-blue-700">Create one</span></p>
+              <p class="text-center">or,</p>
+              <button class="btn btn-neutral mt-4"><i class="fa-brands fa-google" style="color: #ffffff;"></i> Login with Google</button>
+            </fieldset>
+          </div>
+          <div class="flex justify-center p-10">
+            <fieldset class="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+              <label class="label">Name</label>
+              <input type="text" class="input" placeholder="Name" required/>
+              <label class="label">Email</label>
+              <input type="email" class="input" placeholder="Email" required/>
+              <label class="label">Password</label>
+              <input type="password" class="input" placeholder="Password" required />
+              <button class="btn btn-neutral mt-4">Sign Up</button>
+            </fieldset>
+          </div>
+        </div>
+      </dialog>
+    </div>
+
     <!-- banner section starts hare  -->
     <section class="flex flex-col-reverse lg:flex-row items-center mx-8 gap-6 mx-auto px-10">
       <div class="flex-1">
@@ -71,10 +113,16 @@
           অটোমেটিকভাবে মিল, খরচ ও ব্যালান্স ট্র্যাকিং আপনার হাতের মুঠোয়।
         </p>
         <div class="mt-5 space-x-9 lg:space-x-3">
-          <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none">
+          <button
+            class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none"
+          >
             <i class="fa-brands fa-google-play"></i> Download App
           </button>
-          <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none"><i class="fa-brands fa-youtube"></i> Watch Tutorial</button>
+          <button
+            class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none"
+          >
+            <i class="fa-brands fa-youtube"></i> Watch Tutorial
+          </button>
         </div>
       </div>
       <div class="w-96 flex-1">
@@ -96,11 +144,15 @@
           সবচেয়ে বড় সুবিধা হলো—এখানে নেই ডাটা হারানোর কোনো ভয়। যেকোনো সময়, যেকোনো মোবাইল থেকে লগইন করে আপনি সহজেই
           ম্যানেজ করতে পারবেন আপনার মেস এবং দেখে নিতে পারবেন মেসের বর্তমান সব হিসাব এক নজরে।
         </p>
-        <button class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none"><i class="fa-brands fa-facebook"></i> Facebook Page</button>
+        <button
+          class="btn btn-secondary bg-slate-700 rounded-lg shadow-md transition transform hover:scale-105 hover:bg-green-200 hover:shadow-lg duration-300 ease-in-out animate-pulse hover:text-slate-950 border-none"
+        >
+          <i class="fa-brands fa-facebook"></i> Facebook Page
+        </button>
       </div>
     </section>
     <!-- why choose us section  -->
-    <section class="flex gap-5 px-10 items-center lg:flex-col flex-col-reverse">
+    <section class="flex gap-5 px-10 items-center lg:flex-row flex-col-reverse">
       <div class="flex-1 space-y-3">
         <h2 class="text-5xl mb-3">why choose Us?</h2>
         <div class="flex flex-wrap gap-3">
@@ -189,7 +241,7 @@
       </div>
     </section>
     <footer class="bg-gray-100 text-center">
-        <h3>@ Copyright 2025 <span class="font-bold">7C Members</span> all rights reserved</h3>
+      <h3>@ Copyright 2025 <span class="font-bold">7C Members</span> all rights reserved</h3>
     </footer>
   </body>
 </html>
